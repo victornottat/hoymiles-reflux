@@ -63,6 +63,20 @@
             "device_class": "energy",
             "unit_of_measurement": "Wh"
         },
+        "grid_power":{
+            "name":"grid_power",
+            "icon":"mdi:transmission-tower-export",
+            "state_class": "measurement",
+            "device_class": "power",
+            "unit_of_measurement": "W"
+        },
+        "load_power":{
+            "name":"grid_power",
+            "icon":"mdi:home-lightning-bolt",
+            "state_class": "measurement",
+            "device_class": "power",
+            "unit_of_measurement": "W"
+        },
         "real_power_total_increasing": {
             "name": "real_power_total_increasing",
             "icon": "mdi:solar-power",

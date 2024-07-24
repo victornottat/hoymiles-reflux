@@ -277,6 +277,12 @@ class Hoymiles(object):
             round(float(solar_data['year_eq']) / 1000, 2))
         solar_data['total_eq'] = str(
             round(float(solar_data['total_eq']) / 1000, 2))
+        
+        """Add reflux data"""
+        if 'reflux_station_data' in solar_data.keys():
+            reflux = solar_data['reflux_station_data']
+            solar_data['grid_power'] = reflux['grid_power']
+            solar_data['load_power'] = reflux['load_power']
 
         last_data_time = solar_data['last_data_time']
         last_data_time = datetime.strptime(last_data_time, '%Y-%m-%d %H:%M:%S')

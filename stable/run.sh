@@ -42,6 +42,6 @@ bashio::log.info "${HASS_TIMEZONE}"
 export HASS_TIMEZONE_2=$(bashio::info "timezone")
 bashio::log.info "${HASS_TIMEZONE_2}"
 
-bashio::log.blue "dmslabs - Home Assistant HoyMiles Solar Data Gateway Add-on"
+bashio::log.blue "vnottat - Home Assistant HoyMiles Solar Data Gateway Add-on with reflux"
 
 python3 /hoymiles.py
